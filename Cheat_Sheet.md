@@ -27,37 +27,37 @@ Primitives are the basic building blocks of JavaScript.
 
 ## [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 
-- and (expression 1 `&&` expression2) Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, && returns true if both operands are true; otherwise, returns false.
+1. *AND '&&' -(expression 1 `&&` expression2)* Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, && returns true if both operands are true; otherwise, returns false.
 
-1. a1 = true  && true      // t && t returns true
-1. a2 = true  && false     // t && f returns false
-1. a3 = false && true      // f && t returns false
-1. a4 = false && (3 == 4)  // f && f returns false
-1. a5 = "Cat" && "Dog"     // t && t returns "Dog"
-1. a6 = false && "Cat"     // f && t returns false
-1. a7 = "Cat" && false     // t && f returns false
+- a1 = 'true  && true'      // t && t returns true
+- a2 = 'true  && false'     // t && f returns false
+- a3 = 'false && true'      // f && t returns false
+- a4 = 'false && (3 == 4)'  // f && f returns false
+- a5 = '"Cat" && "Dog"'     // t && t returns "Dog"
+- a6 = 'false && "Cat"'     // f && t returns false
+- a7 = '"Cat" && false'     // t && f returns false
 
-(converting 'AND' to "OR') bCondition1 && bCondition2 ALWAYS EQUALS !(!bCondition1 || !bCondition2)
+(converting *AND* to *OR*) 'bCondition1 && bCondition2' ALWAYS EQUALS '!(!bCondition1 || !bCondition2)'
 
-- or (expression1 `||` expression2) Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, || returns true if either operand is true; if both are false, returns false.
+1. *OR '||' -(expression1 `||` expression2)* Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, || returns true if either operand is true; if both are false, returns false.
 
-1. o1 = true  || true       // t || t returns true
-1. o2 = false || true       // f || t returns true
-1. o3 = true  || false      // t || f returns true
-1. o4 = false || (3 == 4)   // f || f returns false
-1. o5 = "Cat" || "Dog"      // t || t returns "Cat"
-1. o6 = false || "Cat"      // f || t returns "Cat"
-1. o7 = "Cat" || false      // t || f returns "Cat"
+- o1 = 'true  || true'       // t || t returns true
+- o2 = 'false || true'       // f || t returns true
+- o3 = 'true  || false'      // t || f returns true
+- o4 = 'false || (3 == 4)'   // f || f returns false
+- o5 = '"Cat" || "Dog"'      // t || t returns "Cat"
+- o6 = 'false || "Cat"'      // f || t returns "Cat"
+- o7 = '"Cat" || false'      // t || f returns "Cat"
 
-(converting 'OR' to 'AND') bCondition1 || bCondition2 ALWAYS EQUALS !(!bCondition1 && !bCondition2)
+(converting *OR* to *AND*) 'bCondition1 || bCondition2' ALWAYS EQUALS '!(!bCondition1 && !bCondition2)'
 
-- not ('!' expression) Returns false if its single operand can be converted to true; otherwise, returns true.
+1. *NOT '!' ('!' expression)* Returns false if its single operand can be converted to true; otherwise, returns true.
 
-1. n1 = !true              // !t returns false
-1. n2 = !false             // !f returns true
-1. n3 = !"Cat"             // !t returns false
+- n1 = '!true'              // !t returns false
+- n2 = '!false'             // !f returns true
+- n3 = '!"Cat"'             // !t returns false
 
-(converting between 'NOTs') !!bCondition ALWAYS EQUALS bCondition
+(converting between 'NOTs') '!!bCondition' ALWAYS EQUALS 'bCondition'
 
 ## Comparison Operators
 - greater-than (`>`)
